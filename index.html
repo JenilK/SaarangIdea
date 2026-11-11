@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHAASTRA 2026 | IIT Madras Tech Fest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient grain overlay & cursor tracking spotlight -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <div class="cursor-spotlight" id="cursor-spotlight" aria-hidden="true"></div>
+
+  <!-- Component 2: Morphing Sticky Navigation -->
+  <header class="nav-container">
+    <nav class="nav-pill" id="nav-pill" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand">SHAASTRA<span class="brand-accent">'26</span></a>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <span class="nav-indicator" id="nav-indicator" aria-hidden="true"></span>
+        <a href="#hero" class="nav-link active" data-section="hero">Overview</a>
+        <a href="#about" class="nav-link" data-section="about">Genesis</a>
+        <a href="#events" class="nav-link" data-section="events">Arenas</a>
+        <a href="#sponsors" class="nav-link" data-section="sponsors">Partners</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Component 1: Immersive Landing Hero -->
+  <main>
+    <section id="hero" class="hero-section">
+      <canvas id="particle-canvas" aria-hidden="true"></canvas>
+      <div class="hero-content">
+        <div class="hero-meta">
+          <span class="meta-tag">IIT MADRAS</span>
+          <span class="meta-dot"></span>
+          <span class="meta-tag">TECH FESTIVAL</span>
+          <span class="meta-dot"></span>
+          <span class="meta-tag">ISO 9001:2015</span>
+        </div>
+        <h1 class="hero-title" id="hero-title" aria-label="SHAASTRA"></h1>
+        <p class="hero-tagline">Engineering the uncharted edge of human capability through relentless student-led breakthroughs.</p>
+        <div class="cta-wrapper">
+          <a href="#events" class="magnetic-btn" id="magnetic-btn">
+            <span class="btn-chrome-border" aria-hidden="true"></span>
+            <span class="btn-text">EXPLORE THE ARENAS</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dummy Sections for Scroll Target & Navigation Morphing -->
+    <section id="about" class="dummy-section">
+      <div class="section-container">
+        <span class="section-num">[ 01 // GENESIS ]</span>
+        <h2>Asia's Largest Student-Engineered Odyssey</h2>
+        <p>Shaastra stands as India's premier annual technical festival organized entirely by the students of IIT Madras, championing hands-on innovation and pioneering research for over two decades.</p>
+      </div>
+    </section>
+
+    <section id="events" class="dummy-section">
+      <div class="section-container">
+        <span class="section-num">[ 02 // ARENAS ]</span>
+        <h2>High-Stakes Competitive Engineering</h2>
+        <p>From autonomous aerial swarms and quantum logic hackathons to hyper-efficiency vehicle design, battle across 50+ cutting-edge competitive tracks.</p>
+      </div>
+    </section>
+
+    <section id="sponsors" class="dummy-section">
+      <div class="section-container">
+        <span class="section-num">[ 03 // PARTNERS ]</span>
+        <h2>Incubating Tomorrow's Industrial Titans</h2>
+        <p>Partnering with visionary deep-tech incubators and global laboratories to fund, mentor, and launch student-born moonshot prototypes into reality.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Shaastra, Indian Institute of Technology Madras.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
